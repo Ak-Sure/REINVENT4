@@ -1,0 +1,15 @@
+14:13:49 <INFO> Started REINVENT 4.6.27 (C) AstraZeneca 2017, 2023 on 2025-09-24
+14:13:49 <INFO> Command line: C:\Users\akash\miniconda3\envs\reinvent4\Scripts\reinvent -l sampling.log sampling.toml
+14:13:49 <INFO> Reading run configuration from C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\sampling.toml using format toml
+14:13:49 <INFO> User akash on host Akash
+14:13:49 <INFO> Python version 3.10.18
+14:13:49 <INFO> PyTorch version 2.7.1+cpu, git e2d141dbde55c2a4370fac5165b0561b6af4798b
+14:13:49 <INFO> PyTorch compiled with CUDA version None
+14:13:49 <INFO> RDKit version 2025.03.6
+14:13:49 <INFO> Platform Windows-10-10.0.26100-SP0
+14:13:49 <INFO> Number of PyTorch CUDA devices 0
+14:13:49 <WARN> 'use_cuda' is deprecated, use 'device' instead
+14:13:49 <INFO> Using CPU Intel64 Family 6 Model 183 Stepping 1, GenuineIntel
+14:13:49 <INFO> Writing JSON config file to C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\_sampling.json
+14:13:49 <INFO> Starting Sampling
+14:13:49 <CRIT> model file C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\priors\reinvent.prior is not accessible

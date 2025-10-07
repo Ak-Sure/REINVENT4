@@ -1,0 +1,37 @@
+16:39:49 <INFO> Started REINVENT 4.6.27 (C) AstraZeneca 2017, 2023 on 2025-10-07
+16:39:49 <INFO> Command line: C:\Users\akash\miniconda3\envs\reinvent4\Scripts\reinvent -l sampling.log C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\sampling.toml
+16:39:49 <INFO> Reading run configuration from C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\sampling.toml using format toml
+16:39:49 <INFO> User akash on host Akash
+16:39:49 <INFO> Python version 3.10.18
+16:39:49 <INFO> PyTorch version 2.6.0+cu124, git 2236df1770800ffea5697b11b0bb0d910b2e59e1
+16:39:49 <INFO> PyTorch compiled with CUDA version 12.4
+16:39:49 <INFO> RDKit version 2025.03.6
+16:39:49 <INFO> Platform Windows-10-10.0.26100-SP0
+16:39:49 <INFO> Number of PyTorch CUDA devices 1
+16:39:49 <WARN> 'use_cuda' is deprecated, use 'device' instead
+16:39:49 <INFO> Using CUDA device:0 NVIDIA GeForce RTX 4060 Laptop GPU
+16:39:49 <INFO> GPU memory: 7099 MiB free, 8187 MiB total
+16:39:49 <INFO> Writing JSON config file to C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\_sampling.json
+16:39:49 <INFO> Starting Sampling
+16:39:49 <INFO> C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\priors\reinvent.prior has valid hash:
+{ 'comments': [],
+  'creation_date': 0,
+  'date_format': 'UNIX epoch',
+  'hash_id': '173568c36e1fc3d95cab289c7d31ce0b',
+  'hash_id_format': 'xxhash.xxh3_128_hex 3.4.1',
+  'model_id': '55d68f8a81c04f5a86304ebe1723a0ea',
+  'model_id_format': 'uuid.uuid4 3.10.12',
+  'origina_data_source': 'ChEMBL 25',
+  'updates': []}
+16:39:49 <INFO> Number of network parameters: 5,805,602
+16:39:49 <INFO> Network architecture:
+RNN(
+  (_embedding): Embedding(34, 256)
+  (_rnn): LSTM(256, 512, num_layers=3, batch_first=True)
+  (_linear): Linear(in_features=512, out_features=34, bias=True)
+)
+16:39:49 <INFO> Using generator Reinvent
+16:39:49 <INFO> Writing sampled SMILES to CSV file sampling.csv
+16:39:49 <INFO> Sampling 157 SMILES from model priors/reinvent.prior
+16:39:49 <INFO> Removed 0 invalid SMILES
+16:39:49 <INFO> Finished REINVENT on 2025-10-07

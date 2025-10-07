@@ -1,0 +1,117 @@
+17:24:50 <INFO> Started REINVENT 4.6.27 (C) AstraZeneca 2017, 2023 on 2025-10-07
+17:24:50 <INFO> Command line: C:\Users\akash\miniconda3\envs\reinvent4\Scripts\reinvent -l TL.log C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\transfer_learning.toml
+17:24:50 <INFO> Reading run configuration from C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\transfer_learning.toml using format toml
+17:24:50 <INFO> User akash on host Akash
+17:24:50 <INFO> Python version 3.10.18
+17:24:50 <INFO> PyTorch version 2.6.0+cu124, git 2236df1770800ffea5697b11b0bb0d910b2e59e1
+17:24:50 <INFO> PyTorch compiled with CUDA version 12.4
+17:24:50 <INFO> RDKit version 2025.03.6
+17:24:50 <INFO> Platform Windows-10-10.0.26100-SP0
+17:24:50 <INFO> Number of PyTorch CUDA devices 1
+17:24:50 <WARN> 'use_cuda' is deprecated, use 'device' instead
+17:24:50 <INFO> Using CUDA device:0 NVIDIA GeForce RTX 4060 Laptop GPU
+17:24:50 <INFO> GPU memory: 7099 MiB free, 8187 MiB total
+17:24:50 <INFO> Writing TensorBoard summary to C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\tb_TL
+17:24:50 <INFO> Writing JSON config file to C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\json_transfer_learning.json
+17:24:50 <INFO> Starting Transfer Learning
+17:24:50 <ERRO> C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\priors\mol2mol_scaffold_generic.prior has invalid hash:
+{ 'comments': [],
+  'creation_date': 0,
+  'date_format': 'UNIX epoch',
+  'hash_id': '2e9b50a81011b9dcae60e555a73a6144',
+  'hash_id_format': 'xxhash.xxh3_128_hex 3.4.1',
+  'model_id': 'dbe73d69456f42f990b955233dc7f514',
+  'model_id_format': 'uuid.uuid4 3.10.12',
+  'origina_data_source': 'ChEMBL 28',
+  'updates': []}
+17:24:50 <INFO> Number of network parameters: 17,462,400
+17:24:50 <INFO> Network architecture:
+EncoderDecoder(
+  (encoder): Encoder(
+    (layers): ModuleList(
+      (0-5): 6 x EncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linears): ModuleList(
+            (0-3): 4 x Linear(in_features=256, out_features=256, bias=True)
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (sublayer): ModuleList(
+          (0-1): 2 x SublayerConnection(
+            (norm): LayerNorm()
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+    )
+    (norm): LayerNorm()
+  )
+  (decoder): Decoder(
+    (layers): ModuleList(
+      (0-5): 6 x DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linears): ModuleList(
+            (0-3): 4 x Linear(in_features=256, out_features=256, bias=True)
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linears): ModuleList(
+            (0-3): 4 x Linear(in_features=256, out_features=256, bias=True)
+          )
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (sublayer): ModuleList(
+          (0-2): 3 x SublayerConnection(
+            (norm): LayerNorm()
+            (dropout): Dropout(p=0.1, inplace=False)
+          )
+        )
+      )
+    )
+    (norm): LayerNorm()
+  )
+  (src_embed): Sequential(
+    (0): Embeddings(
+      (lut): Embedding(128, 256)
+    )
+    (1): PositionalEncoding(
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (tgt_embed): Sequential(
+    (0): Embeddings(
+      (lut): Embedding(128, 256)
+    )
+    (1): PositionalEncoding(
+      (dropout): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (generator): Generator(
+    (proj): Linear(in_features=256, out_features=128, bias=True)
+  )
+)
+17:24:50 <INFO> Using generator Mol2Mol
+17:24:50 <INFO> Read 2 input SMILES from C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\mol2mol.smi
+17:24:50 <INFO> Read 2 validation SMILES from C:\Users\akash\OneDrive - University of Florida\Reinvent\REINVENT4\configs\mol2mol_valid.smi
+17:24:50 <WARN> randomize_smiles was set to True but the model was not trained with randomized SMILES.  Setting randomize_smiles to False.
+17:24:50 <INFO> Creating Tanimoto pairs with 1 processes...
+17:24:50 <INFO> Tanimoto pairs created
+17:24:50 <INFO> Indexing training pairs...
+17:24:50 <INFO> Number of training pairs: 2
+17:24:50 <INFO> Indexing validation pairs...
+17:24:50 <INFO> Number of validation pairs: 2
+17:24:56 <INFO> iSIM computed: 0.5338870143223321 (tb_isim=True, have_isim=True)
+17:24:56 <INFO> Best validation loss (4.418) was at epoch 3
+17:24:56 <WARN> No clear minimum found in validation loss. Consider training your model for additional epochs.
+17:24:56 <INFO> Finished REINVENT on 2025-10-07
